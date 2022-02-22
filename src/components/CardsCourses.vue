@@ -4,18 +4,33 @@
       <h2 class="text-center p-4">New Courses</h2>
       <div class="row">
         <div class="col-12 d-flex flex-wrap">
-          <div class="col-4 p-3" v-for="(image, index) in images" :key="index">
+          <div
+            class="col-4 p-3 text-center"
+            v-for="(image, index) in images"
+            :key="index"
+          >
             <img
               class="img-fluid"
               :src="require(`../assets/img/${image.poster}`)"
               alt=""
             />
-            <p>{{ image.text }}</p>
-            <p>{{ image.genres }}</p>
+            <div class="bg-cards">
+              <p class="fs-5">
+                <strong>{{ image.text }}</strong>
+              </p>
+              <p class="pb-3 text-color">{{ image.genres }}</p>
+
+              <hr />
+              <div class="d-flex justify-content-between p-3">
+                <span><i class="fa-solid fa-signal"></i> Advanced</span>
+                <span><i class="fa-solid fa-list-ul"></i> 8 Lectures</span>
+                <span><i class="fa-regular fa-clock"></i> 6 hours</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center m-4">
+      <div class="d-flex justify-content-center mt-5 pb-5">
         <a href="#">LOAD MORE</a>
       </div>
     </div>
@@ -75,11 +90,24 @@ export default {
   margin-top: 30px;
 }
 
+.bg-cards {
+  background-color: white;
+}
+
 a {
   background-color: #f2b91e;
   padding: 10px 20px;
   color: white;
   text-decoration: none;
   border-radius: 50px;
+}
+
+.fa-solid,
+.fa-regular {
+  color: #f2b91e;
+}
+
+.text-color {
+  color: silver;
 }
 </style>
