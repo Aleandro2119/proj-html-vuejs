@@ -6,6 +6,8 @@
     <CardsCourses />
     <Book />
     <Courses />
+    <Spotlight />
+    <Students />
   </div>
 </template>
 
@@ -16,6 +18,8 @@ import MainTop from "./components/MainTop.vue";
 import CardsCourses from "./components/CardsCourses.vue";
 import Book from "./components/Book.vue";
 import Courses from "./components/Courses.vue";
+import Spotlight from "./components/Spotlight.vue";
+import Students from "./components/Students.vue";
 
 export default {
   name: "App",
@@ -26,6 +30,8 @@ export default {
     CardsCourses,
     Book,
     Courses,
+    Spotlight,
+    Students,
   },
 };
 </script>
