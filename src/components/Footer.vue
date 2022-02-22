@@ -1,22 +1,30 @@
 <template>
-  <footer class="pt-5">
+  <footer class="mt-5 pt-5">
     <div class="container">
       <div class="row">
         <div class="col-3">
           <h4>ABOUT</h4>
           <ul>
-            <li v-for="(about, index) in abouts" :key="index">
+            <li
+              class="list-unstyled"
+              v-for="(about, index) in abouts"
+              :key="index"
+            >
               <a :href="about.url">{{ about.text }}</a>
             </li>
             <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-twitter p-4"></i>
             <i class="fa-brands fa-instagram"></i>
           </ul>
         </div>
         <div class="col-3">
           <h4>CONTACT</h4>
           <ul>
-            <li v-for="(contact, index) in contacts" :key="index">
+            <li
+              class="list-unstyled"
+              v-for="(contact, index) in contacts"
+              :key="index"
+            >
               <a :href="contact.url">{{ contact.text }}</a>
             </li>
           </ul>
@@ -31,10 +39,15 @@
         </div>
         <div class="col-3">
           <h4>BLOG</h4>
+
           <ul>
-            <li v-for="(blog, index) in blogs" :key="index">
+            <li
+              class="list-unstyled"
+              v-for="(blog, index) in blogs"
+              :key="index"
+            >
               <img :src="require(`../assets/img/${blog.image}`)" alt="" />
-              <a :href="blog.url">{{ blog.text }}</a>
+              <a class="text-black fw-bold" :href="blog.url">{{ blog.text }}</a>
               <span>{{ blog.date }}</span>
             </li>
           </ul>
@@ -101,14 +114,10 @@ footer {
   ul {
     padding: 0;
 
-    li {
-      list-style-type: none;
-
-      a,
-      span {
-        text-decoration: none;
-        color: #4d5156;
-      }
+    a,
+    span {
+      text-decoration: none;
+      color: #4d5156;
     }
   }
 }
