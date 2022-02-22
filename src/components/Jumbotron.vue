@@ -4,25 +4,45 @@
       <div class="position-text">
         <h1>
           Start your Human <br />
-          Revolution today
+          <span>Revolution</span> today
         </h1>
-        <p>
+        <p class="pt-3">
           A wonderfull serenity has taken possession of my entire soul, like
           <br />
           these sweet mornings of spring which I enjoy with my whole heart.
         </p>
       </div>
-      <div class="subscrive">
-        <h4>Limited Sale: All courses with 55% off</h4>
-        <input type="text" placeholder="Enter your email" />
-        <button type="button">SUBSCRIBE</button>
+      <div class="">
+        <div class="subscrive">
+          <div class="">
+            <h4>
+              <span class="text-white">Limited Sale:</span> All courses with 55%
+              off
+            </h4>
+            <input type="text" placeholder="Enter your email" />
+            <button type="button">SUBSCRIBE</button>
+          </div>
+        </div>
       </div>
+      <!-- <div class="input-group subscrive">
+        <h4>Limited Sale: All courses with 55% off</h4>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter your email"
+        />
+        <button class="btn btn-outline-secondary" type="button">
+          SUBSCRIBE
+        </button>
+      </div>-->
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Jumbotron",
+};
 </script>
 
 <style lang="scss" scoped>
@@ -51,5 +71,9 @@ export default {};
   background-color: #f2b91e;
   padding: 30px;
   border-radius: 10px;
+}
+
+span {
+  color: #f2b91e;
 }
 </style>
