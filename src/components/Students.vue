@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <div class="row">
-        <h2 class="text-center">What Students Say</h2>
+        <h2 class="text-center mt-5">What Students Say</h2>
         <div class="col-3 d-flex align-items-center justify-content-center">
           <i class="fa-solid fa-arrow-left"></i>
         </div>
@@ -14,7 +14,7 @@
               alt="1"
             />
             <img
-              class="rounded-circle p-3"
+              class="rounded-circle p-3 wi-25"
               src="../assets/img/2-100x100.jpg"
               alt="2"
             />
@@ -24,10 +24,10 @@
               alt="3"
             />
           </div>
-          <div class="text-center">
+          <div class="text-center mt-5">
             <h4>Paints of the Future</h4>
             <i v-for="n in 5" :key="n" class="fa-solid fa-star"></i>
-            <p>
+            <p class="mt-3">
               The response to your MasterStudy has been really overwhelming!
               Those who participated in the workshop are spreading the word here
               on campus and the "buzz" is on. The VP of Instruction wants you to
@@ -51,5 +51,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.fa-star {
+  color: #f2b91e;
+}
+
+.wi-25 {
+  width: 35%;
+}
 </style>
