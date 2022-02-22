@@ -60,4 +60,8 @@ export default {
     color: silver;
   }
 }
+
+.box:hover {
+  background-color: #f2b91e;
+}
 </style>
