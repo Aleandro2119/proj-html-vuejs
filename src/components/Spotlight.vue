@@ -5,22 +5,25 @@
         <div class="col-12 d-flex flex-wrap position">
           <div class="col-3 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-user-group"> </i>
-            <span>3195</span>
+            <span class="fw-bold">3195</span>
             <span class="text-white">Online Learner</span>
           </div>
+
           <div class="col-3 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-film"> </i>
-            <span>23</span>
+            <span class="fw-bold">23</span>
             <span class="text-white">Video Courses</span>
           </div>
+
           <div class="col-3 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-image"> </i>
-            <span>437</span>
+            <span class="fw-bold">437</span>
             <span class="text-white">Sliders & Images</span>
           </div>
+
           <div class="col-3 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-thumbs-up"> </i>
-            <span>1440</span>
+            <span class="fw-bold">1440</span>
             <span class="text-white">Excellent Reviews</span>
           </div>
         </div>
@@ -50,14 +53,12 @@ export default {
 }
 
 .position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: calc(450px / 2);
 }
 
 span {
   color: #f2b91e;
-  font-size: 20px;
+  font-size: 22px;
   padding-left: 10px;
 }
 
