@@ -3,12 +3,20 @@
     <div class="container">
       <div class="row">
         <div class="col-5">
-          <h4 class="pb-3">
-            Hey there, my name is <br />
-            John Doe. I'm the founder <br />
-            of the Brain Academy.
-          </h4>
-          <img class="img-fluid" src="../assets/img/sign-184x108.jpg" alt="" />
+          <div class="d-flex justify-content-center align-items-center">
+            <h4 class="pb-3">
+              Hey there, my name is <br />
+              John Doe. I'm the founder <br />
+              of the Brain Academy.
+            </h4>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              class="img-fluid mt-3"
+              src="../assets/img/sign-184x108.jpg"
+              alt="Sign"
+            />
+          </div>
         </div>
         <div class="col-7">
           <p>
@@ -33,12 +41,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "MainTop",
+};
 </script>
 
 <style lang="scss" scoped>
 .main-top {
   background-color: white;
-  margin-top: 120px;
+  margin-top: 140px;
+  margin-bottom: 80px;
 }
 </style>
