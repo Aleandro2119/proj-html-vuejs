@@ -8,6 +8,7 @@
     <Courses />
     <Spotlight />
     <Students />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Book from "./components/Book.vue";
 import Courses from "./components/Courses.vue";
 import Spotlight from "./components/Spotlight.vue";
 import Students from "./components/Students.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -32,6 +34,7 @@ export default {
     Courses,
     Spotlight,
     Students,
+    Footer,
   },
 };
 </script>
