@@ -5,6 +5,7 @@
     <MainTop />
     <CardsCourses />
     <Book />
+    <Courses />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Jumbotron from "./components/Jumbotron.vue";
 import MainTop from "./components/MainTop.vue";
 import CardsCourses from "./components/CardsCourses.vue";
 import Book from "./components/Book.vue";
+import Courses from "./components/Courses.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     MainTop,
     CardsCourses,
     Book,
+    Courses,
   },
 };
 </script>
